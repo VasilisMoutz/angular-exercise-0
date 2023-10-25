@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-exercise-0';
+  receivedData: string = "";
+  oddWord: string = "";
+  evenWord: string = "";
+
+  addItem(newItem: string) {
+    if (newItem.length % 2 == 0) {
+      this.evenWord = newItem;
+    }
+    else {
+      this.oddWord = newItem;
+    }
+
+  }
 }
